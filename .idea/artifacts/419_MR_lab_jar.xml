@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="419-MR-lab:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/419_MR_lab_jar</output-path>
+    <root id="archive" name="419-MR-lab.jar">
+      <element id="module-output" name="419-MR-lab" />
+      <element id="library" level="module" name="Maven: jdk.tools:jdk.tools:1.8.0_242" module-name="419-MR-lab" />
+    </root>
+  </artifact>
+</component>
