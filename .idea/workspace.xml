@@ -7,9 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d506888f-5761-48d6-93a0-a4a73a95a494" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SortOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/419_MR_lab_jar/419-MR-lab.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/419_MR_lab_jar/419-MR-lab.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SortOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SortOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SortTotalOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SortTotalOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SortTotalOrder$mapOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SortTotalOrder$mapOne.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SortTotalOrder$reduceOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SortTotalOrder$reduceOne.class" afterDir="false" />

@@ -113,16 +113,9 @@ public class SortTotalOrder {
 
     public static class mapOne extends Mapper<Text, Text, Text, Text> {
 
-        private Text word1 = new Text();
-        private Text word2 = new Text();
 
         public void map(Text key, Text value, Context context) throws IOException, InterruptedException {
-            String line = value.toString();
-            StringTokenizer tokens = new StringTokenizer(line);
-            word1.set(tokens.nextToken());
-            if (tokens.hasMoreTokens())
-                word2.set(tokens.nextToken());
-            context.write(word1, word2);
+            context.write(key, value);
         }
     }
 
