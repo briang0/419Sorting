@@ -1,3 +1,4 @@
+
 import java.io.IOException;
 import java.net.URI;
 import java.security.Key;
@@ -21,7 +22,7 @@ import org.apache.hadoop.mapreduce.lib.partition.InputSampler.RandomSampler;
 import org.apache.hadoop.mapreduce.lib.partition.TotalOrderPartitioner;
 import org.apache.hadoop.util.GenericOptionsParser;
 
-public class SortOrder {
+public class SortTotalOrder {
 
     public static void main(String[] args) throws Exception{
 
@@ -57,7 +58,7 @@ public class SortOrder {
         job.setJarByClass(SortTotalOrder.class);
         job.setNumReduceTasks(reduceNumber);
 
-        job.setMapOutputKeyClass(IntWritable.class);
+        job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(Text.class);
 
         job.setOutputKeyClass(Text.class);
@@ -76,15 +77,21 @@ public class SortOrder {
         //SequenceFileOutputFormat.setOutputCompressionType(job, CompressionType.BLOCK);
 
         // Use TotalOrderPartitioner class to sort input data
+        job.setPartitionerClass(TotalOrderPartitioner.class);
 
         FileInputFormat.addInputPath(job, new Path(otherArgs[0]));
 
         // Output path
         FileOutputFormat.setOutputPath(job, new Path(otherArgs[1]));
 
+        // Write the partition file to the partition path set above
+        InputSampler.writePartitionFile(job, sampler);
+
+        URI partitionUri = new URI("home/lab3/_partitions");
+        job.addCacheFile(partitionUri);
 
         if (job.waitForCompletion(true)) {
-
+			
 			/*
 			FileSystem fs = FileSystem.get(conf);
 			// Create path object and check for its existence
@@ -92,7 +99,7 @@ public class SortOrder {
 			if (fs.exists(ParPath)) {
 				// false indicates do not deletes recursively
 				fs.delete(ParPath, false);
-
+			   
 			  }
 			  */
 
@@ -103,28 +110,19 @@ public class SortOrder {
         ////////////////////////////////////////////////////////////////////////////
     }
 
-    public static class mapOne extends Mapper<Text, Text, IntWritable, Text> {
-        private IntWritable num = new IntWritable();
-        private Text pairText = new Text();
+    public static class mapOne extends Mapper<Text, Text, Text, Text> {
 
-//begin sampling
+
         public void map(Text key, Text value, Context context) throws IOException, InterruptedException {
-           String pair = key.toString() + " " + value.toString();
-           num.set((int)Math.round(Math.random() * 1000000));
-           pairText.set(pair);
-           context.write(num, pairText);
+            context.write(key, value);
         }
     }
 
-    public static class reduceOne extends Reducer<IntWritable, Text, Text, Text> {
-        private Text keyText = new Text();
-        private Text valText = new Text();
-        public void reduce(IntWritable key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
+    public static class reduceOne extends Reducer<Text, Text, Text, Text> {
+
+        public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
             for (Text val : values) {
-                String[] keyPair = val.toString().split(" ");
-                keyText.set(keyPair[0]);
-                valText.set(keyPair[1]);
-                context.write(keyText, valText);
+                context.write(key, val);
             }
         }
     }

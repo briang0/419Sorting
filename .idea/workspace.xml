@@ -7,7 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d506888f-5761-48d6-93a0-a4a73a95a494" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/SortOrder.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SortOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/419_MR_lab_jar/419-MR-lab.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SortTotalOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SortTotalOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SortOrder$mapOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SortOrder$mapOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SortOrder$reduceOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SortOrder$reduceOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SortOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SortOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SortTotalOrder$mapOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SortTotalOrder$mapOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SortTotalOrder$reduceOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SortTotalOrder$reduceOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SortTotalOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SortTotalOrder.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +59,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
@@ -96,14 +110,18 @@
       <screen x="65" y="24" width="1855" height="926" />
     </state>
     <state x="456" y="132" key="#com.intellij.execution.impl.EditConfigurationsDialog/65.24.1855.926@65.24.1855.926" timestamp="1583368528494" />
-    <state x="730" y="259" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1583371554922">
+    <state x="805" y="186" key="#com.intellij.ide.util.MemberChooser" timestamp="1583384193497">
       <screen x="65" y="24" width="1855" height="926" />
     </state>
-    <state x="730" y="259" key="#com.intellij.ide.util.TreeClassChooserDialog/65.24.1855.926@65.24.1855.926" timestamp="1583371554922" />
-    <state x="750" y="334" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1582865594990">
+    <state x="805" y="186" key="#com.intellij.ide.util.MemberChooser/65.24.1855.926@65.24.1855.926" timestamp="1583384193497" />
+    <state x="730" y="259" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1583384357818">
       <screen x="65" y="24" width="1855" height="926" />
     </state>
-    <state x="750" y="334" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/65.24.1855.926@65.24.1855.926" timestamp="1582865594990" />
+    <state x="730" y="259" key="#com.intellij.ide.util.TreeClassChooserDialog/65.24.1855.926@65.24.1855.926" timestamp="1583384357818" />
+    <state x="750" y="334" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1583381060316">
+      <screen x="65" y="24" width="1855" height="926" />
+    </state>
+    <state x="750" y="334" width="484" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/65.24.1855.926@65.24.1855.926" timestamp="1583381060316" />
     <state x="780" y="231" key="FileChooserDialogImpl" timestamp="1582867854076">
       <screen x="65" y="24" width="1855" height="926" />
     </state>
@@ -128,18 +146,18 @@
       <screen x="65" y="24" width="1855" height="926" />
     </state>
     <state x="373" y="168" width="924" height="682" key="Maven.ArtifactSearchDialog/65.24.1855.926@65.24.1855.926" timestamp="1582864492223" />
-    <state x="480" y="51" width="1024" height="843" key="SettingsEditor" timestamp="1583373364460">
+    <state x="480" y="51" width="1024" height="843" key="SettingsEditor" timestamp="1583384361619">
       <screen x="65" y="24" width="1855" height="926" />
     </state>
-    <state x="480" y="51" width="1024" height="843" key="SettingsEditor/65.24.1855.926@65.24.1855.926" timestamp="1583373364460" />
+    <state x="480" y="51" width="1024" height="843" key="SettingsEditor/65.24.1855.926@65.24.1855.926" timestamp="1583384361619" />
     <state x="654" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1582743577199">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="654" y="381" key="com.intellij.ide.util.TipDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1582743577199" />
-    <state x="76" y="34" width="1" height="29" key="dock-window-1" timestamp="1583371597141">
+    <state x="76" y="34" width="2" height="29" key="dock-window-1" timestamp="1583384764667">
       <screen x="65" y="24" width="1855" height="926" />
     </state>
-    <state x="76" y="34" width="1" height="29" key="dock-window-1/65.24.1855.926@65.24.1855.926" timestamp="1583371597141" />
+    <state x="76" y="34" width="2" height="29" key="dock-window-1/65.24.1855.926@65.24.1855.926" timestamp="1583384764667" />
     <state x="481" y="76" width="710" height="867" key="find.popup" timestamp="1582864303753">
       <screen x="65" y="24" width="1855" height="926" />
     </state>
