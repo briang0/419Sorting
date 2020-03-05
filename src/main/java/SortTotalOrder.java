@@ -85,7 +85,7 @@ public class SortTotalOrder {
         // Write the partition file to the partition path set above
         InputSampler.writePartitionFile(job, sampler);
 
-        URI partitionUri = new URI("SOMEPATHHERE/_partitions");
+        URI partitionUri = new URI("home/lab3/_partitions");
         job.addCacheFile(partitionUri);
 
         if (job.waitForCompletion(true)) {
