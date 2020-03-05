@@ -7,13 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d506888f-5761-48d6-93a0-a4a73a95a494" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/SortOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/419_MR_lab_jar/419-MR-lab.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/419_MR_lab_jar/419-MR-lab.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/419_MR_lab_jar/419-MR-lab.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SortTotalOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SortTotalOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SortTotalOrder$mapOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SortTotalOrder$mapOne.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SortTotalOrder$reduceOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SortTotalOrder$reduceOne.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SortTotalOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SortTotalOrder.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,10 +133,10 @@
       <screen x="65" y="24" width="1855" height="926" />
     </state>
     <state x="373" y="168" width="924" height="682" key="Maven.ArtifactSearchDialog/65.24.1855.926@65.24.1855.926" timestamp="1582864492223" />
-    <state x="480" y="51" width="1024" height="843" key="SettingsEditor" timestamp="1583371558650">
+    <state x="480" y="51" width="1024" height="843" key="SettingsEditor" timestamp="1583373364460">
       <screen x="65" y="24" width="1855" height="926" />
     </state>
-    <state x="480" y="51" width="1024" height="843" key="SettingsEditor/65.24.1855.926@65.24.1855.926" timestamp="1583371558650" />
+    <state x="480" y="51" width="1024" height="843" key="SettingsEditor/65.24.1855.926@65.24.1855.926" timestamp="1583373364460" />
     <state x="654" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1582743577199">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>

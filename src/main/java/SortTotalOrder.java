@@ -120,7 +120,8 @@ public class SortTotalOrder {
             String line = value.toString();
             StringTokenizer tokens = new StringTokenizer(line);
             word1.set(tokens.nextToken());
-            word2.set(tokens.nextToken());
+            if (tokens.hasMoreTokens())
+                word2.set(tokens.nextToken());
             context.write(word1, word2);
         }
     }
