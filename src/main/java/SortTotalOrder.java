@@ -1,6 +1,7 @@
 
 import java.io.IOException;
 import java.net.URI;
+import java.security.Key;
 import java.util.StringTokenizer;
 
 import org.apache.hadoop.conf.Configuration;
@@ -12,6 +13,7 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+import org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
@@ -49,7 +51,7 @@ public class SortTotalOrder {
         RandomSampler<Text, Text> sampler = new InputSampler.RandomSampler<Text, Text> (0.15, 5600000);
 
         // Set the path of partition file
-        TotalOrderPartitioner.setPartitionFile(conf, new Path("SOMEPATHHERE/_partitions"));
+        TotalOrderPartitioner.setPartitionFile(conf, new Path("home/lab3/_partitions"));
 
 
         Job job = Job.getInstance(conf, "Exp1");
@@ -67,7 +69,7 @@ public class SortTotalOrder {
 
         // KeyValueTextInputFormat.class is the only one class we can use in this experiment
         // Since TotalOrderPartitioner.class requires input must be <Text, Text>
-        job.setInputFormatClass(TextInputFormat.class);
+        job.setInputFormatClass(KeyValueTextInputFormat.class);
         job.setOutputFormatClass(TextOutputFormat.class);
         //job.setOutputFormatClass(SequenceFileOutputFormat.class);
         //SequenceFileOutputFormat.setCompressOutput(job, true);
@@ -109,12 +111,12 @@ public class SortTotalOrder {
         ////////////////////////////////////////////////////////////////////////////
     }
 
-    public static class mapOne extends Mapper<LongWritable, Text, Text, Text> {
+    public static class mapOne extends Mapper<Text, Text, Text, Text> {
 
         private Text word1 = new Text();
         private Text word2 = new Text();
 
-        public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
+        public void map(Text key, Text value, Context context) throws IOException, InterruptedException {
             String line = value.toString();
             StringTokenizer tokens = new StringTokenizer(line);
             word1.set(tokens.nextToken());
